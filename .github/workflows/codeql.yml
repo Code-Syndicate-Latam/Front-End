@@ -1,0 +1,18 @@
+name: codeql.yml
+
+on:
+  push:
+    branches: [ development ]
+  pull_request:
+    branches: [ development ]
+  schedule:
+    - cron: '0 9 * * 0'
+
+permissions:
+  contents: read
+
+jobs:
+  call-central-codeql-javascript-typescript-frontend:
+    uses: Code-Syndicate-Latam/org-security/.github/workflows/codeql-java.yml@main
+    with:
+      config-file: .github/codeql/codeql-config.yaml

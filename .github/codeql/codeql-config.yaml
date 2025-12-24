@@ -1,0 +1,8 @@
+name: codeql-config.yaml
+
+paths-ignore:
+  - node_modules
+  - dist
+  - build
+  - .next
+  - coverage
