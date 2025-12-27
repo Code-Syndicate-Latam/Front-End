@@ -9,10 +9,12 @@ on:
     - cron: '0 9 * * 0'
 
 permissions:
-  contents: read
+  contents: inherit
 
 jobs:
   call-central-codeql-javascript-typescript-frontend:
-    uses: Code-Syndicate-Latam/org-security/.github/workflows/codeql-java.yml@main
+    permissions: inherit
+    secrets: inherit
+    uses: Code-Syndicate-Latam/org-security/.github/workflows/codeql-javascript-typescript-frontend.yaml@main
     with:
       config-file: .github/codeql/codeql-config.yaml
