@@ -6,7 +6,7 @@ import { RouterLink, RouterModule } from '@angular/router';
   templateUrl: './singin-component.component.html',
   imports: [RouterLink,RouterModule]
 })
-export class SinginComponentComponent implements OnInit {
+export class SinginComponent implements OnInit {
 
   constructor() { }
 
