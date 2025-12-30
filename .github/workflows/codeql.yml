@@ -9,7 +9,8 @@ on:
     - cron: '0 9 * * 0'
 
 permissions:
-  contents: inherit
+  security-events: write
+  contents: read
 
 jobs:
   call-central-codeql-javascript-typescript-frontend:
