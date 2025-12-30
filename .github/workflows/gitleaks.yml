@@ -11,4 +11,6 @@ permissions:
 
 jobs:
   call-central-gitleaks:
+    permissions: inherit
+    secrets: inherit
     uses: Code-Syndicate-Latam/org-security/.github/workflows/gitleaks.yml@main
