@@ -14,8 +14,8 @@ permissions:
 
 jobs:
   call-central-codeql-javascript-typescript-frontend:
+    uses: Code-Syndicate-Latam/org-security/.github/workflows/codeql-javascript-typescript-frontend.yaml@main
     permissions: inherit
     secrets: inherit
-    uses: Code-Syndicate-Latam/org-security/.github/workflows/codeql-javascript-typescript-frontend.yaml@main
     with:
       config-file: .github/codeql/codeql-config.yaml
